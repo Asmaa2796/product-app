@@ -18,7 +18,7 @@ const ProductDetails = () => {
     const { selectedProduct, isLoading } = useSelector((state) => state.products);
     useEffect(() => {
         dispatch(getProduct(id))
-    }, [id]);
+    }, [id,dispatch]);
     const images =
         selectedProduct?.images?.length > 0
             ? selectedProduct.images

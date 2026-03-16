@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { IconMenu3, IconLogout, IconLogin, IconHome } from '@tabler/icons-react';
+import { IconLogout, IconLogin, IconHome } from '@tabler/icons-react';
 import { toast } from "react-toastify";
 
 const Navbar = () => {

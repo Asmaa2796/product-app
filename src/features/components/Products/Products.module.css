@@ -1,0 +1,96 @@
+.card_btn {
+    background-color: var(--main-color);
+    color: var(--basic-color);
+    border-radius: 25px;
+    padding: 7px 20px 9px;
+    font-size: 15px;
+}
+.p_card {position: relative;}
+/* HTML: <div className="ribbon">Your text content</div> */
+.ribbon {
+  font-size: 17px;
+  color: var(--basic-color);
+}
+.ribbon {
+  --f: .5em;
+  --r: .8em;
+  position: absolute;
+  top: 20px;
+  left: calc(-1*var(--f));
+  padding-inline: .8em;
+  line-height: 1.8;
+  background: forestgreen;
+  border-bottom: var(--f) solid #0005;
+  border-right: var(--r) solid #0000;
+  clip-path: 
+    polygon(calc(100% - var(--r)) 0,0 0,0 calc(100% - var(--f)),var(--f) 100%,
+      var(--f) calc(100% - var(--f)),calc(100% - var(--r)) calc(100% - var(--f)),
+      100% calc(50% - var(--f)/2));
+}
+.details_card {
+    background-color: var(--basic-color);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    position: relative;
+}
+
+.discount_ribbon {
+  font-size: 18px;
+  color: var(--basic-color);
+  text-align: center;
+}
+.discount_ribbon {
+  --f: .5em;
+  --r: .8em;
+  position: absolute;
+  top: 20px;
+  right: calc(-1*var(--f));
+  padding-inline: .8em;
+  line-height: 1.8;
+  background: #FA6900;
+  border-bottom: var(--f) solid #0005;
+  border-left: var(--r) solid #0000;
+  clip-path: 
+    polygon(var(--r) 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,
+      calc(100% - var(--f)) calc(100% - var(--f)),var(--r) calc(100% - var(--f)),
+      0 calc(50% - var(--f)/2));
+}
+
+.rate {
+  font-size: 23px;
+  color: var(--basic-color);
+}
+.rate {
+  --f: .4em;
+  --r: .8em;
+  
+  position: absolute;
+  right: 20px;
+  top: calc(-1*var(--f));
+  padding: .2em;
+  border: solid #0000;
+  border-width: 0 calc(2*var(--f)) var(--r) 0;
+  background: 
+    radial-gradient(50% 100% at bottom,#0005 98%,#0000 101%) 
+    100% 0/calc(2*var(--f)) var(--f) no-repeat border-box;
+  background-color: gold;
+  border-radius: var(--f) var(--f) 0 0;
+  clip-path: polygon(100% 0,0 0,0 calc(100% - var(--r)),calc(50% - var(--f)) 100%,calc(100% - 2*var(--f)) calc(100% - var(--r)),calc(100% - 2*var(--f)) var(--f),100% var(--f));
+}
+.info_card {
+    padding: 20px;
+}
+.category span {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 3px 20px 5px;
+    display: inline-block;
+    border-radius: 25px;
+}
+.price {color: forestgreen;}
+
+@media(max-width:360px) {
+    .details_card, .details_card p {padding: 10px;font-size: small;word-wrap: break-word;}
+}
